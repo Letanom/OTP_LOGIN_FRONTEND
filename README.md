@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+OTP Login Frontend
+This project is the frontend part of an OTP-based login system built with React. It allows users to register, receive an OTP via email, and log in using the OTP.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+User registration
+OTP generation and email delivery
+OTP-based login
+Tech Stack
+Frontend: React, React Router, Axios
+UI Components: React Bootstrap, react-toastify
+Prerequisites
+Node.js
+Installation
+Clone the repository:
 
-## Available Scripts
+bash
+git clone https://github.com/Letanom/OTP_LOGIN_FRONTEND.git
+cd OTP_LOGIN_FRONTEND
+Install dependencies:
 
-In the project directory, you can run:
+bash
 
-### `npm start`
+npm install
+Running the Application
+Start the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm start
+Open your browser and navigate to http://localhost:3000.
 
-### `npm test`
+Project Structure
+OTP_LOGIN_FRONTEND/
+├── public/
+│   ├── index.html
+├── src/
+│   ├── components/
+│   │   ├── LoginForm.js
+│   │   ├── OTPForm.js
+│   │   ├── RegisterForm.js
+│   ├── Pages/
+│   │   ├── LoginPage.js
+│   │   ├── OTPPage.js
+│   │   ├── RegisterPage.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── services/
+│   │   ├── ApiCaller.js
+│   │   ├── Apis.js
+│   │   ├── Help.js
+├── package.json
+└── README.md
+Environment Variables
+To run this project, you will need to add the following environment variables to your .env file:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+env
+REACT_APP_API_BASE_URL=http://localhost:5000/api
+Dependencies
+axios: For making HTTP requests
+react-bootstrap: For UI components
+react-router-dom: For routing
+react-toastify: For notifications
